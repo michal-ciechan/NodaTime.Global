@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net45;netstandard1.3;netstandard2.0</TargetFrameworks>
+        <Version>1.0.1</Version>
+        <Company>Codeperf Ltd</Company>
+        <Author>Michal Ciechan</Author>
+        <Description>Testable NodaClock.Default which exposes a static singleton IClock.</Description>
+        <RepositoryUrl>https://github.com/michal-ciechan/NodaTime.Global</RepositoryUrl>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <IncludeSource>true</IncludeSource>
+        <IncludeSymbols>true</IncludeSymbols>
+        <PackageReleaseNotes>
+            Testable NodaClock.Default which exposes a static singleton IClock.
+        </PackageReleaseNotes>
+        <PackageIcon>icon.png</PackageIcon>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NodaTime" Version="2.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="icon.png" Pack="true" PackagePath=""/>
+        <None Include="../../LICENSE" Pack="true" PackagePath=""/>
+    </ItemGroup>
+</Project>
